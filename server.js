@@ -5,10 +5,7 @@ const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 3000;
 
 server.use((req, res, next) => {
-  res.header(
-    "Access-Control-Allow-Origin",
-    "https://github.com/mashkust/mashkust.github.io"
-  );
+  res.header("Access-Control-Allow-Origin", "https://mashkust.github.io");
   res.header(
     "Access-Control-Allow-Methods",
     "GET, POST, PUT, DELETE, PATCH, OPTIONS"
